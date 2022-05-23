@@ -1,50 +1,32 @@
-# start = input("Hi, do you want to start the game? ")
-points =+ 0
-start = 'yes'
+print("Welcome to the quiz game :)")
+start = input("Do you want to play? ")
+
 if start.lower() != "yes":
+    print("Bye")
     quit()
 
-print("Okay so lets start.")
-
-print("Question 1:\n Who create first light bulb? ")
-q1 = input().lower()
-if q1 == "thomas edison":
-    points =+ 1
-    print("Good answer. Now you have {} points".format(points))
+print("---------------------------------Games has been started---------------------------")
+points = 0
+cpu = input("What is full name of the CPU ? ")
+if cpu.lower() == "central processing unit":
+    print("Great you have a point")
+    points += 1
 else:
-    print("Sorry no points, wrong answer.")
+    print("Your answer was wrong")
 
-print("Question 2:\n Who create first light bulb? ")
-q2 = input().lower()
-if q1 == "thomas edison":
-    points =+ 1
-    print("Good answer. Now you have {} points".format(points))
+hdd = input("What is full name name of HDD? ")
+if hdd.lower() == "hard disk drive":
+    print("Great you have a point")
+    points += 1
 else:
-    print("Sorry no points, wrong answer.")
+    print("Your answer was wrong")
 
-print("Question 3:\n Who create first light bulb? ")
-q3 = input().lower()
-if q2 == "thomas edison":
-    points =+ 1
-    print("Good answer. Now you have {} points".format(points))
+ssd = input("What is full name name of SSD? ")
+if hdd.lower() == "solid state drive":
+    print("Great you have a point")
+    points += 1
 else:
-    print("Sorry no points, wrong answer.")
+    print("Your answer was wrong")
 
-print("Question 4:\n Who create first light bulb? ")
-q4 = input().lower()
-if q3 == "thomas edison":
-    points =+ 1
-    print("Good answer. Now you have {} points".format(points))
-else:
-    print("Sorry no points, wrong answer.")
-
-print("Question 5:\n In which year gta 5 was released? ")
-q5 = input().lower()
-if q5 == "2013":
-    points =+ 1
-    print("Good answer. Now you have {} points".format(points))
-else:
-    print("Sorry no points, wrong answer.")
-
-print("At the end you have {}".format(points))
-print("Thanks for playing :)")
+print("---------------------------------Games has been ENDED---------------------------")
+print("Number of your points {}".format(points))
